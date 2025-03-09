@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Blue top line */
+        .top-line {
+            height: 4px;
+            background-color: #007BFF;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 4px;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-links li {
+            margin-right: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            background-color: #333;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+        section {
+            padding: 20px;
+            margin-top: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+        /* Social Media Links */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is hosted using GitHub Pages.</p>
+
+    <div class="top-line"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This is hosted using GitHub Pages.</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="My Profile Picture">
+            <p>Hello! My name is Jyot Buch, and I'm passionate about AI, Machine Learning, and Data Science. I'm currently pursuing an MSc in Statistics at UIUC and working on projects ranging from financial modeling to AI-powered virtual try-on systems. My interests also include automation, deep learning, and business intelligence.</p>
+            <p>Feel free to explore my projects and reach out to me!</p>
+        </section>
+
+        <!-- Social Media Section -->
+        <div class="social-links">
+            <h2>Connect with Me</h2>
+            <a href="https://github.com/your-username" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/your-username" target="_blank">Twitter</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Jyot Buch | Powered by GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
